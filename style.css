@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;700&display=swap');
+*{
+    margin: 0px;padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.main{
+    background-image: url(./assets/rock.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    background: -webkit-linear-gradient(rgb(144, 4, 4), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+.container{
+    background-color: rgba(152, 7, 7, 0.544);
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+h3{
+    font-weight: 400;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 300px;
+    color: rgb(255, 255, 255);
+}
+
+.form input, select{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.submit{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.submit:hover{
+    background-color: white;
+    color:black
+}
+
+.alerta{
+    margin-top: 10px;
+    color: white;
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion al DOM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main">
+        <h1>RESERVA TUS ENTRADAS</h1>
+        <div class="container">
+            <form target="_blank" action="https://cilsa.org/" id="form" class="form">
+                <label for="band"><h3>Elegi tu banda</h3></label>
+                <select name="band" id="band" required>
+                    <option disabled selected value>  </option>
+                    <option value="">The Beatles</option>
+                    <option value="">Rollings Stones</option>
+                    <option value="">Soda Stereo</option>
+                    <option value="">Virus</option>
+                    <option value="">Quenn</option>
+                </select>
+
+                <label for="nombre"><h3>Nombre y Apellido</h3></label>
+                <input type="text" id="nombre" class="animated" required>
+
+                <label for="dni"><h3>DNI</h3></label>
+                <input type="number" id="dni" required>
+
+                <label for="mail"><h3>Mail</h3></label>
+                <input type="email" name="" id="mail" required>
+
+                <label for="telefono"><h3>Telefono</h3></label>
+                <input type="number" id="telefono" required>
+            
+                <label for="entradas"><h3>Cantidad de entradas</h3></label>
+                <input type="number" name="entradas" id="entradas"min="0" max="5" required>
+
+                <input  class="submit" type="submit" onclick="listo()" value="LISTO">
+            </form>
+        </div>
+    </main>
+    <script src="./script.js" ></script>
+</body>
+</html>
